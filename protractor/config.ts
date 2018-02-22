@@ -8,6 +8,6 @@ export const config: Config = {
   noGlobals: true,
   onPrepare: () => {
     browser.ignoreSynchronization = true;
-	reporter();
+    reporter();
   }
-}
+};
