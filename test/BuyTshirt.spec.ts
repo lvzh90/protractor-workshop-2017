@@ -42,4 +42,3 @@ describe('Buy a t-shirt', () => {
       .toBe('Your order on My Store is complete.');
   });
 });
- 
