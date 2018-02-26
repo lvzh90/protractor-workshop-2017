@@ -6,6 +6,9 @@ export const config: Config = {
   SELENIUM_PROMISE_MANAGER: false,
   specs: ['../test/Google.spec.js'],
   noGlobals: true,
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 120000
+  },
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {
@@ -14,6 +17,7 @@ export const config: Config = {
   },
   onPrepare: () => {
     browser.ignoreSynchronization = true;
+    browser.manage().timeouts().implicitlyWait(3000)
     reporter();
   }
 };
