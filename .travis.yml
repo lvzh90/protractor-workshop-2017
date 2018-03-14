@@ -13,4 +13,4 @@ dist: trusty
 addons:
   chrome: stable
 before_install:
-  - google-chrome-stable --headless --disable-gpu --no-sandbox
+  - google-chrome-stable --headless --disable-gpu --window-size=800,600 --no-sandbox
