@@ -13,5 +13,4 @@ dist: trusty
 addons:
   chrome: stable
 before_install:
-  - # start your web application and listen on `localhost`
   - google-chrome-stable --headless --disable-gpu
