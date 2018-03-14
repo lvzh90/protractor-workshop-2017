@@ -10,10 +10,7 @@ export const config: Config = {
     defaultTimeoutInterval: 120000
   },
   capabilities: {
-    browserName: 'chrome',
-    chromeOptions: {
-      args: ['--headless', '--disable-gpu', '--window-size=800,600', '--no-sandbox']
-    }
+    browserName: 'chrome'
   },
   onPrepare: () => {
     browser.ignoreSynchronization = true;
