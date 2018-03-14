@@ -5,6 +5,7 @@ import { MenuContentPage, ProductListPage, ProductDetailPage,
   BankPaymentPage, OrderResumePage } from '../src/page';
 
 describe('Buy a t-shirt', () => {
+
   const menuContentPage = new MenuContentPage();
   const productListPage = new ProductListPage();
   const productDetailPage = new ProductDetailPage();
@@ -18,6 +19,7 @@ describe('Buy a t-shirt', () => {
   const orderResumePage = new OrderResumePage();
 
   it('then should be bought a t-shirt', async () => {
+    
     await browser.get('http://automationpractice.com/');
 
     await menuContentPage.goToTShirtMenu();
