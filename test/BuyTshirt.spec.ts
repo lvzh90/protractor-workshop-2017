@@ -5,41 +5,59 @@ import { MenuContentPage, ProductListPage, ProductDetailPage,
   BankPaymentPage, OrderResumePage } from '../src/page';
 
 describe('Buy a t-shirt', () => {
-  const menuContentPage = new MenuContentPage();
-  const productListPage = new ProductListPage();
-  const productDetailPage = new ProductDetailPage();
-  const productAddedModalPage = new ProductAddedModalPage();
-  const summaryStepPage = new SummaryStepPage();
-  const signInStepPage = new SignInStepPage();
-  const addressStepPage = new AddressStepPage();
-  const shippingStepPage = new ShippingStepPage();
-  const paymentStepPage = new PaymentStepPage();
-  const bankPaymentPage = new BankPaymentPage();
-  const orderResumePage = new OrderResumePage();
 
-  it('then should be bought a t-shirt', async () => {
-    await browser.get('http://automationpractice.com/');
+  describe('Load the page http://automationpractice.com/', () => {
+    beforeAll(async () => {
+      await browser.get('http://automationpractice.com/');
+    });
 
-    await menuContentPage.goToTShirtMenu();
+    describe('T-shirt purchase process', () => {
+      const menuContentPage = new MenuContentPage();
+      const productListPage = new ProductListPage();
+      const productDetailPage = new ProductDetailPage();
+      const productAddedModalPage = new ProductAddedModalPage();
+      const summaryStepPage = new SummaryStepPage();
+  
+      beforeAll(async () => {
+        await menuContentPage.goToTShirtMenu();
+        await productListPage.goToProduct('Faded Short Sleeve T-shirts');
+        await productDetailPage.goToAddToCart();
+        await productAddedModalPage.goToProceedToCheckout();
+        await summaryStepPage.goToProceedToCheckout();
+      });
 
-    await productListPage.goToProduct('Faded Short Sleeve T-shirts');
+      describe('Logeo in the application', () => {
+        const signInStepPage = new SignInStepPage();
+    
+        beforeAll(async () => {
+          await signInStepPage.goToSingIn('aperdomobo@gmail.com', 'WorkshopProtractor');
+        });
 
-    await productDetailPage.goToAddToCart();
+        describe('Select the default address', () => {
+          const addressStepPage = new AddressStepPage();
+      
+          beforeAll(async () => {
+            await addressStepPage.goToProceedToCheckout();
+          });
 
-    await productAddedModalPage.goToProceedToCheckout();
-
-    await summaryStepPage.goToProceedToCheckout();
-
-    await signInStepPage.goToSingIn('aperdomobo@gmail.com', 'WorkshopProtractor');
-
-    await addressStepPage.goToProceedToCheckout();
-
-    await shippingStepPage.goToProceedToCheckout();
-
-    await paymentStepPage.goToPayByBankWire();
-
-    await bankPaymentPage.goToConfirmOrder();
-
-    await expect(orderResumePage.getOrderTitle()).toBe('Your order on My Store is complete.');
+          describe('Payment in the bank', () => {
+            const shippingStepPage = new ShippingStepPage();
+            const paymentStepPage = new PaymentStepPage();
+            const bankPaymentPage = new BankPaymentPage();
+            const orderResumePage = new OrderResumePage();
+        
+            beforeAll(async () => {
+              await shippingStepPage.goToProceedToCheckout();
+              await paymentStepPage.goToPayByBankWire();
+              await bankPaymentPage.goToConfirmOrder();
+            });
+        
+            it('The order is completed', async () => {
+              await expect(orderResumePage.getOrderTitle()).toBe('Your order on My Store is complete.');
+            });
+          }); 
+        });
+      });
+    });
   });
 });
