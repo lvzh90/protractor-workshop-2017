@@ -6,7 +6,7 @@ export class ShippingStepPage {
   }
 
   private get proceedToCheckout(): ElementFinder {
-    return $('#form > p > button > span');
+    return $('.cart_navigation button span');
   }
 
   public async goToProceedToCheckout(): Promise<void> {
