@@ -22,7 +22,7 @@ describe('Buy a t-shirt', () => {
 
     await menuContentPage.goToTShirtMenu();
 
-    await productListPage.goToFadedShortSleeve_TShirts();
+    await productListPage.goToProduct('Faded Short Sleeve T-shirts');
 
     await productDetailPage.goToAddToCart();
 
