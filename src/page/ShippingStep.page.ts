@@ -6,7 +6,7 @@ export class ShippingStepPage {
   }
 
   private get proceedToCheckout(): ElementFinder {
-    return $('.cart_navigation button span');
+    return $('[name="processCarrier"]');
   }
 
   public async goToProceedToCheckout(): Promise<void> {
