@@ -9,3 +9,11 @@ node_js:
 branches:
 except:
   - /^v\d+\.\d+\.\d+$/
+sudo: required
+dist: trusty
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
