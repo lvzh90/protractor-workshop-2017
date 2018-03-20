@@ -53,7 +53,8 @@ describe('Buy a t-shirt', () => {
             });
         
             it('The order is completed', async () => {
-              await expect(orderResumePage.getOrderTitle()).toBe('Your order on My Store is complete.');
+              await expect(orderResumePage.getOrderTitle())
+              .toBe('Your order on My Store is complete.');
             });
           }); 
         });
