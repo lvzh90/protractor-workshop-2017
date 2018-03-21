@@ -10,6 +10,12 @@ export const config: Config = {
   jasmineNodeOpts: {
     defaultTimeoutInterval: 120000
   },
+  capabilities: {
+    browserName: 'chrome',
+    chromeOptions: {
+      excludeSwitches: ['enable-automation']
+    }
+  },
   onPrepare: () => {
     browser.ignoreSynchronization = true;
     browser.manage().timeouts().implicitlyWait(0);
