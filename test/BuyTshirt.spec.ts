@@ -20,6 +20,7 @@ describe('Buy a t-shirt', () => {
   
       beforeAll(async () => {
         await menuContentPage.goToTShirtMenu();
+        
         await productListPage.goToProduct('Faded Short Sleeve T-shirts');
         await productDetailPage.goToAddToCart();
         await productAddedModalPage.goToProceedToCheckout();
