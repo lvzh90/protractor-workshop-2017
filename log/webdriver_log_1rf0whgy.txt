@@ -1,0 +1,42 @@
+10:52:09.849 |   2245ms | 931c3d | NewSession
+    {"browserName":"chrome","count":1,"chromeOptions":{"excludeSwitches":["enable-automation"]}}
+10:52:12.109 |     14ms | 931c3d | SetTimeouts
+    ERROR 13: unknown error: 'ms' must be a double
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.3 x86_64)
+10:52:12.128 |      6ms | 931c3d | SetTimeouts
+10:52:12.226 |      5ms | 931c3d | SetTimeouts
+    ERROR 13: unknown error: 'ms' must be a double
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.3 x86_64)
+10:52:12.234 |      5ms | 931c3d | SetTimeouts
+10:52:12.227 |   2692ms | 931c3d | Go http://automationpractice.com/
+10:52:14.925 |     19ms | 931c3d | FindElements
+    Using css selector '#block_top_menu > ul > li > a[title="T-shirts"]'
+    Elements: 0.8212241102601068-1
+10:52:14.948 |   1044ms | 931c3d | ElementClick (0.8212241102601068-1)
+10:52:15.997 |     20ms | 931c3d | FindElements
+    Using css selector '.product-container'
+    Elements: 0.10853580717467204-1
+10:52:16.023 |     19ms | 931c3d | FindElementsFromElement (0.10853580717467204-1)
+    Using css selector '.product-name'
+    Elements: 0.10853580717467204-2
+10:52:16.045 |     22ms | 931c3d | GetElementText (0.10853580717467204-2)
+    Faded Short Sleeve T-shirts
+10:52:16.072 |     76ms | 931c3d | ElementClick (0.10853580717467204-1)
+10:52:21.160 |     22ms | 931c3d | FindElements
+    Using css selector '#add_to_cart'
+    Elements: 
+10:52:21.191 |     17ms | 931c3d | FindElements
+    Using css selector '#email'
+    Elements: 
+10:52:21.214 |     18ms | 931c3d | FindElements
+    Using css selector '[name="processAddress"]'
+    Elements: 
+10:52:21.238 |     19ms | 931c3d | FindElements
+    Using css selector '#cgv'
+    Elements: 
+10:52:21.265 |     18ms | 931c3d | FindElements
+    Using css selector '#center_column > div > p > strong'
+    Elements: 
+10:52:21.361 |     60ms | 931c3d | DeleteSession

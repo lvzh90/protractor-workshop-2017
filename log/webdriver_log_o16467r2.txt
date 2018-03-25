@@ -1,0 +1,54 @@
+11:22:38.050 |   2100ms | f13fa7 | NewSession
+    {"browserName":"chrome","count":1,"chromeOptions":{"excludeSwitches":["enable-automation"]}}
+11:22:40.164 |     12ms | f13fa7 | SetTimeouts
+    ERROR 13: unknown error: 'ms' must be a double
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.3 x86_64)
+11:22:40.181 |      6ms | f13fa7 | SetTimeouts
+11:22:40.291 |      9ms | f13fa7 | SetTimeouts
+    ERROR 13: unknown error: 'ms' must be a double
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.3 x86_64)
+11:22:40.293 |   2507ms | f13fa7 | Go http://automationpractice.com/
+11:22:40.310 |   2490ms | f13fa7 | SetTimeouts
+11:22:42.807 |     20ms | f13fa7 | FindElements
+    Using css selector '#block_top_menu > ul > li > a[title="T-shirts"]'
+    Elements: 0.604496724757021-1
+11:22:42.831 |   1086ms | f13fa7 | ElementClick (0.604496724757021-1)
+11:22:43.925 |     27ms | f13fa7 | WireButtonUp
+    ERROR 13: java.net.SocketException: Connection reset by peer (connect failed)
+11:22:43.926 |    764ms | /session/f13fa7e77ad84b76f9c80fff2c5847aa/doubleclick
+11:22:43.927 |    780ms | f13fa7 | FindElements
+    Using css selector '.product-container'
+    Elements: 0.0182495145807251-1
+11:22:43.929 |    788ms | f13fa7 | FindElements
+    Using css selector '.product-container'
+    Elements: 0.0182495145807251-1
+11:22:44.713 |     25ms | f13fa7 | FindElementsFromElement (0.0182495145807251-1)
+    Using css selector '.product_img_link'
+    Elements: 0.0182495145807251-2
+11:22:44.759 |     13ms | f13fa7 | FindElementsFromElement (0.0182495145807251-1)
+    Using css selector '.product_img_link'
+    Elements: 0.0182495145807251-2
+11:22:44.761 |     18ms | f13fa7 | GetElementAttribute (0.0182495145807251-2)
+    Faded Short Sleeve T-shirts
+11:22:44.776 |     13ms | f13fa7 | GetElementAttribute (0.0182495145807251-2)
+    Faded Short Sleeve T-shirts
+11:22:44.784 |     46ms | f13fa7 | WireMoveTo
+11:22:44.793 |     96ms | f13fa7 | ElementClick (0.0182495145807251-1)
+11:22:49.901 |     20ms | f13fa7 | FindElements
+    Using css selector '#add_to_cart'
+    Elements: 
+11:22:49.929 |     20ms | f13fa7 | FindElements
+    Using css selector '#email'
+    Elements: 
+11:22:49.958 |     17ms | f13fa7 | FindElements
+    Using css selector '[name="processAddress"]'
+    Elements: 
+11:22:49.982 |     17ms | f13fa7 | FindElements
+    Using css selector '#cgv'
+    Elements: 
+11:22:50.007 |     16ms | f13fa7 | FindElements
+    Using css selector '#center_column > div > p > strong'
+    Elements: 
+11:22:50.094 |     54ms | f13fa7 | DeleteSession

@@ -1,0 +1,45 @@
+10:51:29.928 |   2338ms | d9db75 | NewSession
+    {"browserName":"chrome","count":1,"chromeOptions":{"excludeSwitches":["enable-automation"]}}
+10:51:32.280 |     13ms | d9db75 | SetTimeouts
+    ERROR 13: unknown error: 'ms' must be a double
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.3 x86_64)
+10:51:32.298 |      5ms | d9db75 | SetTimeouts
+10:51:32.413 |   2726ms | d9db75 | Go http://automationpractice.com/
+10:51:32.412 |   2728ms | d9db75 | SetTimeouts
+    ERROR 13: unknown error: 'ms' must be a double
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544337 (8c0344a12e552148c185f7d5117db1f28d6c9e85),platform=Mac OS X 10.13.3 x86_64)
+10:51:35.148 |     23ms | d9db75 | SetTimeouts
+10:51:35.146 |     26ms | d9db75 | FindElements
+    Using css selector '#block_top_menu > ul > li > a[title="T-shirts"]'
+    Elements: 0.6829599775949411-1
+10:51:35.176 |   1140ms | d9db75 | ElementClick (0.6829599775949411-1)
+10:51:36.322 |     24ms | d9db75 | FindElements
+    Using css selector '.product-container'
+    Elements: 0.8147939378409497-1
+10:51:36.351 |     24ms | d9db75 | FindElementsFromElement (0.8147939378409497-1)
+    Using css selector '.product-name'
+    Elements: 0.8147939378409497-2
+10:51:36.379 |     23ms | d9db75 | GetElementText (0.8147939378409497-2)
+    Faded Short Sleeve T-shirts
+10:51:36.407 |     22ms | d9db75 | FindElementsFromElement (0.8147939378409497-1)
+    Using css selector 'img'
+    Elements: 0.8147939378409497-3
+10:51:36.433 |    196ms | d9db75 | ElementClick (0.8147939378409497-3)
+10:51:41.642 |     21ms | d9db75 | FindElements
+    Using css selector '#add_to_cart'
+    Elements: 
+10:51:41.671 |     18ms | d9db75 | FindElements
+    Using css selector '#email'
+    Elements: 
+10:51:41.695 |     18ms | d9db75 | FindElements
+    Using css selector '[name="processAddress"]'
+    Elements: 
+10:51:41.718 |     18ms | d9db75 | FindElements
+    Using css selector '#cgv'
+    Elements: 
+10:51:41.744 |     17ms | d9db75 | FindElements
+    Using css selector '#center_column > div > p > strong'
+    Elements: 
+10:51:41.840 |     55ms | d9db75 | DeleteSession
