@@ -1,4 +1,4 @@
-import { $$, ElementFinder, ElementArrayFinder, promise }  from 'protractor';
+import { $$, ElementFinder, ElementArrayFinder, promise } from 'protractor';
 
 export class ProductListPage {
   private get productCountainerList(): ElementArrayFinder {
