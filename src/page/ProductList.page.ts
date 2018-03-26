@@ -7,14 +7,14 @@ export class ProductListPage {
 
   private findByProduct(productName: string): ElementFinder {
     return this.productCountainerList
-    .filter(function (elem) {
-      return elem.$('.product_img_link').getAttribute('Title').then(function (text) {
-        return text === productName;
-      });
-    }).first();
+    .filter((element: ElementFinder) => element
+    .$('.product_img_link')
+    .getAttribute('title')
+    .then((text: string) => text.includes(productName)))
+    .first();
   }
 
   public goToProduct(productName: string): promise.Promise<void> {
-    return this.findByProduct(productName).click();
+    return this.findByProduct(productName).$('img').click();
   }
 }
