@@ -11,7 +11,7 @@ export let config: Config = {
     name: 'UI Workshop',
     browserName: 'chrome',
     chromeOptions: {
-      args: ['disable-infobars=true --window-size=800,600'],
+      args: ['disable-infobars=true', '--window-size=800,600', '--no-sandbox'],
       prefs: { credentials_enable_service: false }
     }
   },
